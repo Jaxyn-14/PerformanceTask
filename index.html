@@ -1,24 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lakbay Batangas Tours</title>
-</head>
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+ <title>Lakbay Batangas Tours</title>
+ </head>
 <body>
-  <header id="home">
-    <h1>Lakbay Batangas Tours</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#tours">Tour Packages</a>
-      <a href="#why-us">Why Choose Us</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about">
+        <header id="home">
+                <h1>Lakbay Batangas Tours</h1>
+                
+        <p>A fictional company for a classroom project.</p> 
+        
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#tours">Tour Packages</a>
+                <a href="#why-us">Why Choose Us</a>
+                <a href="#contacts">Contact Us</a>
+            </nav>
+ </header>
+        <main>  
+        <section id="about">
+                <h2>Welcome</h2>
+                <p>Explore our sample Batangas</p>
+                <a href="#tours">View the sample tour packages</a>
+        </section> 
+        <section id="about">
       <h2>About our tours</h2>
       <p>We help visitors plan a Batangas day trip.</p>
   <figure>
@@ -28,46 +35,115 @@
         <figcaption>Taal Lake, Batangas</figcaption>
   </figure>
     </section>
+            
+        <p>Photo: Talynhaga,<a href="https:/commons.wikimedia.org/wiki/File:Taal_Lake.jpg">Taal Lake </a>,<a href="https://creativecommons.org/licenses.org/by-sa/4.0s/">CC BY-SA 4.0</a>, Original image,displayed smaller</p>
+        
+        <section id="tours">
+                <h2>TourPackages</h2>
+        </section>
+        
+        <h3>Heritage Walk</h3>
+        
+        <p>A simple half-day walking tour.</p>
+        
+            <a href="#contacts">Ask about Heritage Walk</a>
+            
+            <h3>Lake view</h3>
+        
+        <p>A simple day trip to view the  lake from the mainland.</p>
+        
+        <a href="#contacts">Ask about Lake View</a>
 
-    <section id="tours">
-      <h2>Tour packages</h2>
-
-      <h3>Heritage Walk</h3>
-      <p>A sample half-day walking tour.</p>
-
-      <h3>Things to Bring</h3>
-      <ul>
-        <li>Walking Shoes</li>
-        <li>Drinking Water</li>
-        <li>Hat</li>
+<table border="1" width="500">
+      <tr>
+           <th>Tour</th>
+            <th>Duration</th>
+        </tr>
+       <tr>
+           <td>Heritage Walk</td>
+            <td>Half day</td>
+       </tr>
+        <tr>
+            <td>Lake view</td>
+            <td>One day</td>
+         </tr>
+</table>
+        
+        <h3>What to Bring</h3>
+        
+        <ul>
+      <li>Water Bottle</li>
+      <li>Extra clothes</li>
+      <li>Sunscreen</li>
       </ul>
+        
+        <h3>How to enquire</h3>
+        
+      <ol type="1">
+      <li>Choose a Tour</li>
+      <li>Review the details</li>
+      <li>Complete the demo inquiry</li>
+     </ol>
+        
+        <a href="https://www.w3.org/">
+          <form action="#contact" method="get">Ask about a tour</form>
+        </a>
+     
+        <section id="why-us">
+                <h2>Why Choose Us</h2>
+        </section>
+        
+        <p>Our sample trips include clear meeting instructions.</p>
+        
+        <h3>Bring drinking water</h3>
+        <p>Please arrive <i>before</i> the meeting time.</p>
+        
+        <section id="contacts"> 
+                <h2>Contact Us</h2>
+        </section>
+       
+        <p>Lakbay Batangas Tours</p>
+        
+        <form action="#contact" method="get">
+          <p>
+            <label for="visitor-name">Name(required)</label>
+            <input id="visitor-name" name="visitor_name" 
+            type="text" placeholder="Enter your Name." required>
+          </p>
+            
+            <p>
+           <label for="email">Email(required)</label>
+            <input id="email" name="email"
+                type="email" placeholder="Enter your Email." required>
+          </p>
+          
+          <label for ="tour">Tour(required)</label>
+          <select id ="tour" name="tour" required>
+            <option value="">Choose a tour</option>
+            <option value="heritage">Heritage Walk</option>
+            <option value="lake">Lake view</option>
+            </select>
+            
+            <p>
+            <label for="visitor-name">Message(optional)</label>
+            <textarea id="visitor-name" name="visitor_name" 
+            type="text"  placeholder="Enter your Message here..." required></textarea>
+            <br>
+            <input type="radio"  id="email"  name="selection" value="email">
+               <label>Email</label>
+            <input type="radio" id="No reply needed" name="selection"  value="No reply needed">
+               <label>No reply needed</label>
 
-      <h3>Steps to Book a Tour</h3>
-      <ol>
-        <li>Choose a tour.</li>
-        <li>Review the details.</li>
-        <li>Complete the demo enquiry.</li>
-      </ol>
-
-      <a href="#contact">Ask about a tour</a>
-    </section>
-
-    <section id="why-us">
-      <h2>Why Choose Us</h2>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Interested in our tour packages?</p>
-
-      <a href="https://www.w3.org/WAI/">
-  Read the WAI accessibility introduction
-</a>     
-    </section>
-  </main>
-
-  <footer>
-    <p>Lakbay Batangas Tours</p>
-  </footer>
-</body>
-</html>
+            <button type="submit">Check demo form</button>
+            </p>
+            
+            <p>Training website only.No real Booking service.</p>
+        </form>
+        
+        <a href="https://www.w3.org/">
+          Read the WAI accessibilty introduction
+        </a>
+        
+        </main>
+ </body>
+ </html>
